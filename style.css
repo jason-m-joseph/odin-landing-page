@@ -10,8 +10,22 @@ body {
     flex-direction: column;
 }
 
+
+.header, .info-section, .testimonial-section, .cta-section {
+    padding: 0 200px;
+} 
+
 .header {
     background-color: #1F2937;
+    
+}
+
+.nav, .hero-container, .detail-container, .cta-content {
+    display: flex;
+}
+
+.nav, .hero-container, .cta-content {
+    justify-content: space-between;
 }
 
 .info-section {
@@ -19,23 +33,59 @@ body {
     color: #1F2937;
 }
 
+.detail {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-container {
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    padding-bottom: 100px;
+}
+
+.detail img {
+    width: 50px;
+}
+
+.detail p {
+    text-align: center;
+    padding-top: 5px;
+}
+
 .testimonial-section {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cta-section {
     background-color: white;
     color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 .cta-content {
     background-color: #3882F6;
-    width: 800px;
+    width: 100%;
+    align-items: center;
+    padding: 30px 120px;
 }
 
 .footer {
     background-color: #1F2937;
     color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -45,12 +95,20 @@ body {
 
 .hero-title {
     font-size: 48px; font-weight: 900; color: #F9FAF8;
+    margin: 0;
+}
+
+.nav {
+    padding-top: 25px;
+    padding-bottom: 90px;
 }
 
 .nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 25px;
 }
 
 .nav a {
@@ -62,12 +120,19 @@ body {
     font-size: 18px; color: #E5E7EB;
 }
 
+.hero-image {
+    width: 480px;
+    height: 240px;
+}
+
 .hero-button {
     background-color: #3882F6;
     font-weight: 900;
     color: #F9FAF8;
-    border: 0;
+    border-style: none;
     border-radius: 5px;
+    width: 88px;
+    height: 34px;
 }
 
 .cta-button {
@@ -78,14 +143,46 @@ body {
     border-style: solid;
     border-radius: 5px;
     border-color: #F9FAF8;
+    width: 88px;
+    height: 34px;    
 }
 
 .info-title {
     font-size: 36px; font-weight: 900; color: #1F2937;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 .testimonial-text {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    width: 80%;
+    padding-top: 65px;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 900;
+    width: 80%;
+    padding-bottom: 65px;
+}
+
+.hero-container {
+    padding-bottom: 100px;
+    gap: 35px;
+}
+
+.cta-title {
+    margin: 0;
+    padding: 0 0 3px 0;
+} 
+
+.cta-text {
+    margin: 0;
+    padding: 0;
 }
